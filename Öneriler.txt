@@ -1,0 +1,1 @@
+Öncelikle yeni çalışman için tebrikler. Bana kalırsa CRUD metodlarını manuel bir şekilde yazmak yerine Mapping labelları ile çalış ve postman ile de test et. Bu sayede hem proje mimarisini oluşturmayı öğrenirsin, hem de spring framework'ün gücünden de faydalanırsın.

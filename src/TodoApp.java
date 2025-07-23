@@ -27,5 +27,7 @@ public class TodoApp {
             }
 
         }
+        scanner.close();
     }
+
 }

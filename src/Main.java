@@ -11,16 +11,19 @@ public class Main {
 
         System.out.println("Güncel görevler:");
         for (int i = 0; i < todoList.size(); i++){
-            System.out.println((i+1) + ". " + todoList.get(i));
+            System.out.println((i + 1) + ". " + todoList.get(i));
         }
 
-        //Silme işlemi
-        System.out.print("Silmek istediğiniz görevin numarasını giriniz: ");
-        int indexToDelete = scanner.nextInt();
+        //Görev güncelleme
+        System.out.print("Düzenlemek istediğiniz görevin numarasını giriniz: ");
+        int indexToUpdate = scanner.nextInt();
+        scanner.nextLine(); //BU KISIM ÇOK ÖNEMLİ YAPMAYI UNUTMA
 
-        if (indexToDelete > 0 && indexToDelete <= todoList.size()){
-            String removedTask = todoList.remove(indexToDelete -1);
-            System.out.println("Silinen görev: " + removedTask);
+        if (indexToUpdate > 0 && indexToUpdate <= todoList.size()){
+            System.out.print("Yeni görev Başlığını giriniz: ");
+            String newTask = scanner.nextLine();
+            todoList.set(indexToUpdate - 1, newTask);
+            System.out.println("Görev güncellendi.");
         } else {
             System.out.println("Geçersiz bir görev numarası tuşladınız. ");
         }

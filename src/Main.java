@@ -10,7 +10,7 @@ public class Main {
         todoList.add("Spring Boot öğren");
 
         //Görevleri göster
-        System.out.println("Görevler:");
+        System.out.println("Görevler :");
         for (int i = 0; i < todoList.size(); i++){
             System.out.println((i + 1) + ". " + todoList.get(i));
         }
